@@ -207,10 +207,7 @@ $(document).ready(function() {
                         }
                         x=x+1;
                     });
-            
-                    /* for (var pair of formDatas.entries()) {
-                        console.log(pair[0]+ ', ' + pair[1]); 
-                    } */
+    
             
                     $.ajax({
                         url: '/cwt676574',
