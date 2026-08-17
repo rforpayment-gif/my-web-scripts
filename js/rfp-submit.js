@@ -1,7 +1,5 @@
 $('#submit-record').on('submit', function(e) {
 e.preventDefault();
-    // console.log($("#Frm_Company").val());
-    // console.log($("#Frm_Payee").val());
     // Validate Header
     var arrHeader = [
         'Frm_Email',
@@ -208,17 +206,6 @@ e.preventDefault();
                     }
                     x=x+1;
                 });
-        
-                /* for (var pair of formDatas.entries()) {
-                    console.log(pair[0]+ ', ' + pair[1]); 
-                } */
-
-                // var formeralco = $("#Frm_Payee").val();
-                // if (formeralco=="V0000551"){
-                //     var router = '/mer676574';
-                // }else{
-                //     var router = '/676574';
-                // }
         
                 $.ajax({
                     url: '/676574',
