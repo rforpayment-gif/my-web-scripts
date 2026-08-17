@@ -1,9 +1,6 @@
 $(document).ready(function() {
             $('#submitBtn').click(function(e) {
                 e.preventDefault();
-                // console.log($("#Frm_Company").val());
-                // console.log($("#Frm_Payee").val());
-                // Validate Header
                 var arrHeader = [
                     'Frm_Email',
                     'Frm_Company',
@@ -210,10 +207,6 @@ $(document).ready(function() {
                                 x=x+1;
                             });
                     
-                            /* for (var pair of formDatas.entries()) {
-                                console.log(pair[0]+ ', ' + pair[1]); 
-                            } */
-                    
                             $.ajax({
                                 url: '/mer676574',
                                 type: 'POST',
@@ -224,7 +217,6 @@ $(document).ready(function() {
                                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                                 },
                                 success: function(response) {
-                                    console.log(response);
                                     if (response.success) {
                                         Swal.fire({
                                             position: "top-end",
@@ -234,7 +226,6 @@ $(document).ready(function() {
                                             timer: 5000
                                         });
                                     } else {
-                                        //console.error('failed');
                                         Swal.fire({
                                             position: "top-end",
                                             icon: "error",
